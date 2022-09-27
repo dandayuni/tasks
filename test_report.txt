@@ -6,6 +6,39 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/arrays.test.ts
+PASS src/objects.test.ts
+  ● Console
+
+    console.log
+      # Addition
+      What is 2+2?
+
+      at toMarkdown (src/objects.ts:89:13)
+
+    console.log
+      # Letters
+      What is the last letter of the English alphabet?
+
+      at toMarkdown (src/objects.ts:89:13)
+
+    console.log
+      # Colors
+      Which of these is a color?
+      - red
+      - apple
+      - firetruck
+
+      at toMarkdown (src/objects.ts:89:13)
+
+    console.log
+      # Shapes
+      What shape can you make with one line?
+      - square
+      - triangle
+      - circle
+
+      at toMarkdown (src/objects.ts:89:13)
+
 PASS src/HtmlCss.test.tsx
   ● Console
 
@@ -31,17 +64,21 @@ PASS src/App.test.tsx
 
       at Object.<anonymous> (src/App.tsx:6:9)
 
---------------|---------|----------|---------|---------|-------------------
-File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
---------------|---------|----------|---------|---------|-------------------
-All files     |     100 |      100 |     100 |     100 |                   
- App.tsx      |     100 |      100 |     100 |     100 |                   
- arrays.ts    |     100 |      100 |     100 |     100 |                   
- functions.ts |     100 |      100 |     100 |     100 |                   
---------------|---------|----------|---------|---------|-------------------
+----------------|---------|----------|---------|---------|-------------------
+File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------|---------|----------|---------|---------|-------------------
+All files       |   98.91 |    97.56 |     100 |   98.87 |                   
+ src            |   98.91 |    97.56 |     100 |   98.87 |                   
+  App.tsx       |     100 |      100 |     100 |     100 |                   
+  arrays.ts     |     100 |      100 |     100 |     100 |                   
+  functions.ts  |     100 |      100 |     100 |     100 |                   
+  objects.ts    |   96.29 |     87.5 |     100 |   96.15 | 50                
+ src/interfaces |       0 |        0 |       0 |       0 |                   
+  question.ts   |       0 |        0 |       0 |       0 |                   
+----------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 5 passed, 5 total
-Tests:       23 passed, 23 total
+Test Suites: 6 passed, 6 total
+Tests:       33 passed, 33 total
 Snapshots:   0 total
-Time:        3.782 s
+Time:        3.849 s
 Ran all test suites.
